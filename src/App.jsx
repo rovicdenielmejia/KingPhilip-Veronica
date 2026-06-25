@@ -101,42 +101,45 @@ function HomePage() {
 
             {/* Dropdown Results */}
             {showDropdown && searchResults.length > 0 && (
-              <div
-                ref={dropdownRef}
-                className="absolute z-50 left-0 right-0 mx-4 mt-2 rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
-                style={{ background: '#111111', border: '1px solid rgba(255,255,255,0.12)' }}
-              >
-                <div className="max-h-72 overflow-y-auto">
-                  {searchResults.map((guest, index) => (
-                    <button
-                      key={guest.id}
-                      onClick={() => handleSelectGuest(guest)}
-                      className="w-full px-4 py-3 text-left hover:bg-white/[0.06] transition-colors flex items-center justify-between gap-3"
-                      style={{
-                        borderTop: index > 0 ? '1px solid rgba(255,255,255,0.06)' : 'none',
-                        background: index === selectedIndex ? 'rgba(255,255,255,0.08)' : 'transparent',
-                      }}
-                    >
-                      <div className="flex-1 min-w-0">
-                        <p className="font-medium truncate" style={{ color: '#FFFFFF' }}>
-                          {guest.name}
-                        </p>
-                        <p className="text-secondary text-xs truncate">
-                          {guest.table}
-                        </p>
-                      </div>
-                      <svg className="w-4 h-4 shrink-0" style={{ color: 'rgba(255,255,255,0.4)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                  ))}
+              <>
+                <div className="fixed inset-0 z-40" onClick={() => setShowDropdown(false)} />
+                <div
+                  ref={dropdownRef}
+                  className="fixed z-50 left-4 right-4 bottom-4 max-h-[50vh] rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
+                  style={{ background: '#111111', border: '1px solid rgba(255,255,255,0.12)' }}
+                >
+                  <div className="max-h-[calc(50vh-48px)] overflow-y-auto">
+                    {searchResults.map((guest, index) => (
+                      <button
+                        key={guest.id}
+                        onClick={() => handleSelectGuest(guest)}
+                        className="w-full px-4 py-3 text-left hover:bg-white/[0.06] transition-colors flex items-center justify-between gap-3"
+                        style={{
+                          borderTop: index > 0 ? '1px solid rgba(255,255,255,0.06)' : 'none',
+                          background: index === selectedIndex ? 'rgba(255,255,255,0.08)' : 'transparent',
+                        }}
+                      >
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium truncate" style={{ color: '#FFFFFF' }}>
+                            {guest.name}
+                          </p>
+                          <p className="text-secondary text-xs truncate">
+                            {guest.table}
+                          </p>
+                        </div>
+                        <svg className="w-4 h-4 shrink-0" style={{ color: 'rgba(255,255,255,0.4)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="px-4 py-2 border-t" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.06)' }}>
+                    <p className="text-secondary text-xs text-center">
+                      {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
+                    </p>
+                  </div>
                 </div>
-                <div className="px-4 py-2 border-t" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.06)' }}>
-                  <p className="text-secondary text-xs text-center">
-                    {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
-                  </p>
-                </div>
-              </div>
+              </>
             )}
           </div>
 
