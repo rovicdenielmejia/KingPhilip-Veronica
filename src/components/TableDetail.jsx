@@ -38,10 +38,10 @@ const TableDetail = () => {
   }
 
   const getTableSide = (table) => {
-    const left = ["Table 1", "Table 3", "Table 5", "Table 9", "Table 12", "Table 14", "Table 16", "Principal S 1", "Principal S 2"]
+    const left = ["Table 1", "Table 3", "Table 5", "Table 9", "Table 12", "Table 14", "Table 16", "Principal Sponsor 1", "Principal Sponsor 2"]
     if (left.includes(table)) return "Left Side"
-    if (table === "PS Long Table 1") return "Center Left"
-    if (table === "PS Long Table 2") return "Center Right"
+    if (table === "Principal Sponsor Long Table 1") return "Center Left"
+    if (table === "Principal Sponsor Long Table 2") return "Center Right"
     if (table === "Parents Table") return "Front Left Side"
     return "Right Side"
   }
