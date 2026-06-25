@@ -21,16 +21,6 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="floral-divider">
-          <span className="diamond"></span>
-        </div>
-
-        <div className="flex items-center gap-4 py-1">
-          <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)' }}></div>
-          <span className="font-serif text-secondary text-sm tracking-[0.18em] uppercase">June 27, 2026</span>
-          <div className="h-px flex-1" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)' }}></div>
-        </div>
-
         <div className="border border-[rgba(255,255,255,0.12)] rounded-2xl p-6 space-y-5 shadow-soft text-left" style={{ background: 'rgba(255,255,255,0.03)' }}>
           <div className="space-y-1 rounded-xl p-3 text-sm text-center" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
             <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Date and Time</p>
