@@ -112,8 +112,9 @@ const Lightbox = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null
 
   return (
-    <div 
-      className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center"
+      style={{ background: 'rgba(0,0,0,0.95)' }}
       onClick={onClose}
       onWheel={handleWheel}
       onMouseDown={handleMouseDown}
@@ -126,37 +127,41 @@ const Lightbox = ({ isOpen, onClose, children }) => {
     >
       {/* Controls */}
       <div className="absolute top-4 left-4 right-4 flex justify-between z-10">
-        <button 
+        <button
           onClick={(e) => { e.stopPropagation(); onClose(); }}
-          className="w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+          className="w-10 h-10 rounded-full flex items-center justify-center transition-colors shadow-lg"
+          style={{ background: 'rgba(255,255,255,0.1)', color: '#FFFFFF' }}
         >
-          <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
         <div className="flex gap-2">
-          <button 
+          <button
             onClick={(e) => { e.stopPropagation(); setScale(prev => Math.min(prev + 0.5, 4)); }}
-            className="w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors shadow-lg"
+            style={{ background: 'rgba(255,255,255,0.1)', color: '#FFFFFF' }}
           >
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
             </svg>
           </button>
-          <button 
+          <button
             onClick={(e) => { e.stopPropagation(); setScale(prev => Math.max(prev - 0.5, 1)); if (scale <= 1.5) setPosition({ x: 0, y: 0 }); }}
-            className="w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+            className="w-10 h-10 rounded-full flex items-center justify-center transition-colors shadow-lg"
+            style={{ background: 'rgba(255,255,255,0.1)', color: '#FFFFFF' }}
           >
-            <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
             </svg>
           </button>
           {scale > 1 && (
-            <button 
+            <button
               onClick={(e) => { e.stopPropagation(); resetZoom(); }}
-              className="w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors shadow-lg"
+              style={{ background: 'rgba(255,255,255,0.1)', color: '#FFFFFF' }}
             >
-              <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
               </svg>
             </button>
@@ -167,21 +172,21 @@ const Lightbox = ({ isOpen, onClose, children }) => {
       {/* Hint text */}
       {scale === 1 && (
         <p className="absolute bottom-6 left-0 right-0 text-center text-white/60 text-sm">
-          Scroll to zoom • Drag to pan
+          Scroll to zoom &bull; Drag to pan
         </p>
       )}
 
       {/* Image Container */}
-      <div 
+      <div
         className="max-w-full max-h-full overflow-hidden"
         onClick={(e) => e.stopPropagation()}
         style={{
           cursor: scale > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default'
         }}
       >
-        <img 
+        <img
           src={tableArrangementImage}
-          alt="Table Seating Arrangement" 
+          alt="Table Seating Arrangement"
           className="max-w-screen-sm max-h-[85vh] object-contain select-none transition-transform duration-200"
           style={{
             transform: `scale(${scale}) translate(${position.x / scale}px, ${position.y / scale}px)`,

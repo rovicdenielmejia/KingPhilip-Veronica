@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-border/80 mt-8 bg-mint-100/35">
+    <footer className="border-t border-[rgba(255,255,255,0.08)] mt-8" style={{ background: 'rgba(255,255,255,0.02)' }}>
       <div className="h-2 floral-strip"></div>
       <div className="max-w-md mx-auto px-4 py-6">
         <div className="text-center">

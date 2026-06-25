@@ -18,14 +18,14 @@ function HomePage() {
   const navigate = useNavigate()
   const inviteId = params['*'] || params.inviteId || ''
   const [lightboxOpen, setLightboxOpen] = useState(false)
-  
+
   const initialQuery = searchParams.get('q') || ''
-  
+
   const [searchQuery, setSearchQuery] = useState(initialQuery || inviteId)
   const [showDropdown, setShowDropdown] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(-1)
   const dropdownRef = useRef(null)
-  
+
   useEffect(() => {
     if (inviteId) {
       setSearchQuery(inviteId)
@@ -41,7 +41,7 @@ function HomePage() {
       setShowDropdown(false)
     }
   }, [searchQuery, setSearchParams])
-  
+
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return []
     return searchGuests(searchQuery)
@@ -62,7 +62,7 @@ function HomePage() {
 
   const handleKeyDown = (e) => {
     if (!showDropdown || searchResults.length === 0) return
-    
+
     if (e.key === 'ArrowDown') {
       e.preventDefault()
       setSelectedIndex(prev => prev < searchResults.length - 1 ? prev + 1 : prev)
@@ -78,17 +78,17 @@ function HomePage() {
   }
 
   return (
-    <div className="invite-floral-canvas min-h-screen bg-cream-50/65 flex flex-col">
+    <div className="invite-floral-canvas min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-1 max-w-md mx-auto w-full px-4 space-y-8 pb-8">
         <Hero />
 
         {/* Search Section */}
         <section className="space-y-4">
-          <div className="relative bg-cream-50 border border-border rounded-2xl p-4 shadow-soft">
+          <div className="relative rounded-2xl p-4 shadow-soft" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <p className="text-secondary text-[10px] uppercase tracking-[0.18em] mb-2 px-1">Guest Search</p>
-            <SearchBar 
+            <SearchBar
               value={searchQuery}
               onChange={(val) => {
                 setSearchQuery(val)
@@ -98,37 +98,40 @@ function HomePage() {
               autoFocus={!!inviteId}
               onKeyDown={handleKeyDown}
             />
-            
+
             {/* Dropdown Results */}
             {showDropdown && searchResults.length > 0 && (
-              <div 
+              <div
                 ref={dropdownRef}
-                className="absolute z-50 left-0 right-0 mx-4 mt-2 bg-cream-50 border border-border rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
+                className="absolute z-50 left-0 right-0 mx-4 mt-2 rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
+                style={{ background: '#111111', border: '1px solid rgba(255,255,255,0.12)' }}
               >
                 <div className="max-h-72 overflow-y-auto">
                   {searchResults.map((guest, index) => (
                     <button
                       key={guest.id}
                       onClick={() => handleSelectGuest(guest)}
-                      className={`w-full px-4 py-3 text-left hover:bg-mint-100/55 transition-colors flex items-center justify-between gap-3 ${
-                        index === selectedIndex ? 'bg-mint-100/65' : ''
-                      } ${index > 0 ? 'border-t border-border' : ''}`}
+                      className="w-full px-4 py-3 text-left hover:bg-white/[0.06] transition-colors flex items-center justify-between gap-3"
+                      style={{
+                        borderTop: index > 0 ? '1px solid rgba(255,255,255,0.06)' : 'none',
+                        background: index === selectedIndex ? 'rgba(255,255,255,0.08)' : 'transparent',
+                      }}
                     >
                       <div className="flex-1 min-w-0">
-                        <p className="text-primary font-medium truncate">
+                        <p className="font-medium truncate" style={{ color: '#FFFFFF' }}>
                           {guest.name}
                         </p>
                         <p className="text-secondary text-xs truncate">
                           {guest.table}
                         </p>
                       </div>
-                      <svg className="w-4 h-4 text-warmGold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 shrink-0" style={{ color: 'rgba(255,255,255,0.4)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </button>
                   ))}
                 </div>
-                <div className="px-4 py-2 bg-rose-50/70 border-t border-border">
+                <div className="px-4 py-2 border-t" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.06)' }}>
                   <p className="text-secondary text-xs text-center">
                     {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
                   </p>
@@ -147,7 +150,7 @@ function HomePage() {
                   ))}
                 </div>
               ) : (
-                <div className="bg-rose-50/70 rounded-2xl p-6 text-center border border-border shadow-soft">
+                <div className="rounded-2xl p-6 text-center border shadow-soft" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.1)' }}>
                   <p className="text-secondary">
                     No guest found. Please check the spelling or ask the registration team.
                   </p>
@@ -160,28 +163,29 @@ function HomePage() {
         {/* Table Arrangement Image */}
         {!searchQuery.trim() && (
           <>
-            <div 
-              className="bg-cream-50 rounded-2xl p-3 border border-border cursor-zoom-in hover:shadow-soft-lg transition-all"
+            <div
+              className="rounded-2xl p-3 border cursor-zoom-in hover:shadow-soft-lg transition-all"
               onClick={() => setLightboxOpen(true)}
+              style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.1)' }}
             >
-              <img 
+              <img
                 src={tableArrangementImage}
-                alt="Table Seating Arrangement" 
+                alt="Table Seating Arrangement"
                 className="w-full h-auto rounded-lg"
               />
               <p className="text-secondary text-xs text-center mt-2">Tap to zoom</p>
             </div>
             <p className="text-secondary text-center italic font-serif text-lg px-4">
-              "Thank you for celebrating with us"
+              #ItsVEEnKINGafterall
             </p>
           </>
         )}
 
         {/* Lightbox */}
         <Lightbox isOpen={lightboxOpen} onClose={() => setLightboxOpen(false)}>
-          <img 
+          <img
             src={tableArrangementImage}
-            alt="Table Seating Arrangement" 
+            alt="Table Seating Arrangement"
             className="w-full h-auto rounded-lg"
           />
         </Lightbox>

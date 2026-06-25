@@ -1,355 +1,289 @@
 export const guests = [
   // ============================================
-  // TABLE ONE (8 guests)
+  // TABLE 1 (6 guests)
   // ============================================
-  { id: 1, name: "JM VILLANUEVA", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 2, name: "TRISHA EDICA", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 3, name: "MARCO KENNY EDICA", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 4, name: "JULLA CUTARAN", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 5, name: "JM AMADOR", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 6, name: "ALLYSSA MALLILLIN", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 7, name: "MATMAT MAGLUPAY", table: "Table ONE", category: "Regular", notes: "" },
-  { id: 8, name: "MAMA MATMAT", table: "Table ONE", category: "Regular", notes: "" },
+  { id: 1, name: "Mr. & Mrs. Alfredo Visaya", table: "Table 1", category: "Regular", notes: "" },
+  { id: 2, name: "Mr. & Mrs. Daniel Cruz", table: "Table 1", category: "Regular", notes: "" },
+  { id: 3, name: "Melanie Ramos", table: "Table 1", category: "Regular", notes: "" },
+  { id: 4, name: "Hermelita Galliego", table: "Table 1", category: "Regular", notes: "" },
+  { id: 5, name: "Mary Angelie Ramos", table: "Table 1", category: "Regular", notes: "" },
+  { id: 6, name: "Emerson Valdez", table: "Table 1", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE TWO (8 guests)
+  // TABLE 2 (6 guests)
   // ============================================
-  { id: 9, name: "JOHN NELSON MALLILLIN", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 10, name: "APRIL MALLILLIN", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 11, name: "JIA MALLILLIN", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 12, name: "NELIA MALLILLIN", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 13, name: "SOFRONIO MALLILLIN", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 14, name: "JEFFREY GAMBOL", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 15, name: "GRACE CASAUAY", table: "Table TWO", category: "Regular", notes: "" },
-  { id: 16, name: "CONCHA MARAGGUN", table: "Table TWO", category: "Regular", notes: "" },
+  { id: 7, name: "Mary Grace Loyao", table: "Table 2", category: "Regular", notes: "" },
+  { id: 8, name: "Roka", table: "Table 2", category: "Regular", notes: "" },
+  { id: 9, name: "Queency Loyao", table: "Table 2", category: "Regular", notes: "" },
+  { id: 10, name: "Cresencio Labrador", table: "Table 2", category: "Regular", notes: "" },
+  { id: 11, name: "Liliana Labrador", table: "Table 2", category: "Regular", notes: "" },
+  { id: 12, name: "Paul Julius Labrador", table: "Table 2", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE THREE (8 guests)
+  // TABLE 3 (5 guests)
   // ============================================
-  { id: 17, name: "VISITACION MIGUEL", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 18, name: "JOSE SOFRONIO MIGUEL", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 19, name: "BERNY MIGUEL", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 20, name: "PILLAR BUNCAG", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 21, name: "ASTHRID BUNCAG", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 22, name: "ELTON ALEJOS", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 23, name: "JACOB CUTARAN", table: "Table THREE", category: "Regular", notes: "" },
-  { id: 24, name: "JULMARK CUTARAN", table: "Table THREE", category: "Regular", notes: "" },
+  { id: 13, name: "Mr. & Mrs. Oscar Sable", table: "Table 3", category: "Regular", notes: "" },
+  { id: 14, name: "Mr. & Mrs. Robert Sable", table: "Table 3", category: "Regular", notes: "" },
+  { id: 15, name: "Resurrection Barit", table: "Table 3", category: "Regular", notes: "" },
+  { id: 16, name: "Mr. & Mrs. Gilbert Cariaga", table: "Table 3", category: "Regular", notes: "" },
+  { id: 17, name: "Mrs. Jane Barit", table: "Table 3", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE FOUR (8 guests)
+  // TABLE 4 (6 guests)
   // ============================================
-  { id: 25, name: "KENNY EDICA", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 26, name: "MARLYN EDICA", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 27, name: "RAMISES MALLILLIN", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 28, name: "JOSIE DOMINGO", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 29, name: "LOUIE DOMINGO", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 30, name: "ROSA MALLILLIN", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 31, name: "EDNA AMADOR", table: "Table FOUR", category: "Regular", notes: "" },
-  { id: 32, name: "JHULIUS CUTARAN", table: "Table FOUR", category: "Regular", notes: "" },
+  { id: 18, name: "Atty. Jenny Agcaoili", table: "Table 4", category: "Regular", notes: "" },
+  { id: 19, name: "Nino Agcaoili", table: "Table 4", category: "Regular", notes: "" },
+  { id: 20, name: "Dr. Nikki Agcaoili", table: "Table 4", category: "Regular", notes: "" },
+  { id: 21, name: "Atty. Wella Agcaoili", table: "Table 4", category: "Regular", notes: "" },
+  { id: 22, name: "Dr. Kristine Joy Agcaoili", table: "Table 4", category: "Regular", notes: "" },
+  { id: 23, name: "Stephanie Pastor", table: "Table 4", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE FIVE (8 guests)
+  // TABLE 5 (7 guests)
   // ============================================
-  { id: 33, name: "RUTH BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 34, name: "ATIN BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 35, name: "BOY BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 36, name: "THELMA BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 37, name: "MR.BENNY BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 38, name: "MRS.BENNY BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 39, name: "MR.NANONG BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
-  { id: 40, name: "MRS.NANONG BANATAO", table: "Table FIVE", category: "Regular", notes: "" },
+  { id: 24, name: "Pastor & Mrs. Boyet Acbang", table: "Table 5", category: "Regular", notes: "" },
+  { id: 25, name: "Mr. Elbert Cariaga", table: "Table 5", category: "Regular", notes: "" },
+  { id: 26, name: "Ms. Gracious Cariaga", table: "Table 5", category: "Regular", notes: "" },
+  { id: 27, name: "Israel Acbang", table: "Table 5", category: "Regular", notes: "" },
+  { id: 28, name: "Danny Barit", table: "Table 5", category: "Regular", notes: "" },
+  { id: 29, name: "Edith Cubio", table: "Table 5", category: "Regular", notes: "" },
+  { id: 30, name: "Denj Visaya", table: "Table 5", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE SIX (9 guests)
+  // TABLE 6 (5 guests)
   // ============================================
-  { id: 41, name: "GETSE PARAS", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 42, name: "NATHAN PARAS", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 43, name: "TESSIE GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 44, name: "SAMY GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 45, name: "LINDA GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 46, name: "MICHAEL GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 47, name: "RESTY GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 48, name: "NIDA GARCIA", table: "Table SIX", category: "Regular", notes: "" },
-  { id: 49, name: "JOSE GARCIA", table: "Table SIX", category: "Regular", notes: "" },
+  { id: 31, name: "Engr. Jerson Pua", table: "Table 6", category: "Regular", notes: "" },
+  { id: 32, name: "Engr. Christian Pimentel", table: "Table 6", category: "Regular", notes: "" },
+  { id: 33, name: "Mr. & Mrs. Lord Alfonso Tutaan", table: "Table 6", category: "Regular", notes: "" },
+  { id: 34, name: "Mr. & Mrs. Nino Fernandez", table: "Table 6", category: "Regular", notes: "" },
+  { id: 35, name: "Mr. & Mrs. Kriswin Alba", table: "Table 6", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE SEVEN (9 guests)
+  // TABLE 7 (6 guests)
   // ============================================
-  { id: 50, name: "JHODY CABANGAN", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 51, name: "JOJO CABANGAN", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 52, name: "CHERRY LAZARO", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 53, name: "ROSE BECK", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 54, name: "SB ALBINO CUNTAPAY", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 56, name: "SB TONY APOSTOL", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 57, name: "SB BANJO ADDUN", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 58, name: "CEASAR LAGUTAO", table: "Table SEVEN", category: "Regular", notes: "" },
+  { id: 36, name: "Mr. & Mrs. Jim Pascual", table: "Table 7", category: "Regular", notes: "" },
+  { id: 37, name: "Mr. & Mrs. Jon-jon Espinosa", table: "Table 7", category: "Regular", notes: "" },
+  { id: 38, name: "Mr. Arvin Macam", table: "Table 7", category: "Regular", notes: "" },
+  { id: 39, name: "Ms. Janice Espinosa", table: "Table 7", category: "Regular", notes: "" },
+  { id: 40, name: "Hiljoe Pascual", table: "Table 7", category: "Regular", notes: "" },
+  { id: 41, name: "Shakiro", table: "Table 7", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE EIGHT (8 guests)
+  // TABLE 8 (6 guests)
   // ============================================
-  { id: 59, name: "XIAN GALANZA", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 60, name: "RODRIGO MOLINA", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 61, name: "MR.MICHAEL ETRATA", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 62, name: "MRS.MICHAEL ETRATA", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 63, name: "CAESAR FROGOZO", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 64, name: "TONY CORTEZ", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 65, name: "SITANG CORTEZ", table: "Table EIGHT", category: "Regular", notes: "" },
-  { id: 66, name: "NOLIE CORTEZ", table: "Table EIGHT", category: "Regular", notes: "" },
+  { id: 42, name: "Kim Gante", table: "Table 8", category: "Regular", notes: "" },
+  { id: 43, name: "Marco Mamaril", table: "Table 8", category: "Regular", notes: "" },
+  { id: 44, name: "Red Mamaril", table: "Table 8", category: "Regular", notes: "" },
+  { id: 45, name: "Francis Allen Gomez", table: "Table 8", category: "Regular", notes: "" },
+  { id: 46, name: "Dexter Dela Cruz", table: "Table 8", category: "Regular", notes: "" },
+  { id: 47, name: "Mr. & Mrs. Joar Arimado", table: "Table 8", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE NINE (8 guests)
+  // TABLE 9 (8 guests)
   // ============================================
-  { id: 67, name: "AGNES ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 68, name: "VALENTINO ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 69, name: "MODESTO ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 70, name: "FELY ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 71, name: "JONA ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 72, name: "JORENCE ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 73, name: "RENAN ESCONDE", table: "Table NINE", category: "Regular", notes: "" },
-  { id: 74, name: "LEONEL SANTOS", table: "Table NINE", category: "Regular", notes: "" },
+  { id: 48, name: "Ms. Evangeline Espinosa", table: "Table 9", category: "Regular", notes: "" },
+  { id: 49, name: "Gerome Pascual", table: "Table 9", category: "Regular", notes: "" },
+  { id: 50, name: "Dominic", table: "Table 9", category: "Regular", notes: "" },
+  { id: 51, name: "Joshua", table: "Table 9", category: "Regular", notes: "" },
+  { id: 52, name: "Jane Lucas", table: "Table 9", category: "Regular", notes: "" },
+  { id: 53, name: "Janella", table: "Table 9", category: "Regular", notes: "" },
+  { id: 54, name: "Nicole Tumamao", table: "Table 9", category: "Regular", notes: "" },
+  { id: 55, name: "Xypryn", table: "Table 9", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE TEN (8 guests)
+  // TABLE 10 (8 guests)
   // ============================================
-  { id: 75, name: "MERLINDA TAGANAS", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 76, name: "GLENN TAGANAS", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 77, name: "SKA MANGUNAY", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 78, name: "HELEN CABAGAO", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 79, name: "ARIEL CABIGAO", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 80, name: "FERNAN MANACSA", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 81, name: "ENTONG ESCONDE", table: "Table TEN", category: "Regular", notes: "" },
-  { id: 82, name: "GUINTO", table: "Table TEN", category: "Regular", notes: "" },
+  { id: 56, name: "Felihiya Boa", table: "Table 10", category: "Regular", notes: "" },
+  { id: 57, name: "Noralyn Boa", table: "Table 10", category: "Regular", notes: "" },
+  { id: 58, name: "Jenylyn Boa", table: "Table 10", category: "Regular", notes: "" },
+  { id: 59, name: "Joselito Boa", table: "Table 10", category: "Regular", notes: "" },
+  { id: 60, name: "Felix Pascua", table: "Table 10", category: "Regular", notes: "" },
+  { id: 61, name: "Keishen Pascua", table: "Table 10", category: "Regular", notes: "" },
+  { id: 62, name: "Khristian Ramirez", table: "Table 10", category: "Regular", notes: "" },
+  { id: 63, name: "AJ Pascua", table: "Table 10", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE ELEVEN (8 guests)
+  // TABLE 11 (5 guests)
   // ============================================
-  { id: 83, name: "ARCHALYN CABIGAO", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 84, name: "AYEL CABIGAO", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 85, name: "JOSEPHINE ALVAREZ", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 86, name: "BONG ALVAREZ", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 87, name: "SHAHARRA HERRERA", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 88, name: "DULCE GUEVERRA", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 89, name: "LOUIE MANGUNAY", table: "Table ELEVEN", category: "Regular", notes: "" },
-  { id: 90, name: "RIZZA MANGUNAY", table: "Table ELEVEN", category: "Regular", notes: "" },
+  { id: 64, name: "Josie Caymo & Okling", table: "Table 11", category: "Regular", notes: "" },
+  { id: 65, name: "Fe Cauilan & Lei Cauilan", table: "Table 11", category: "Regular", notes: "" },
+  { id: 66, name: "Anna Morgado", table: "Table 11", category: "Regular", notes: "" },
+  { id: 67, name: "Carla Morgado", table: "Table 11", category: "Regular", notes: "" },
+  { id: 68, name: "Mr. & Mrs. Jimmy Zamora", table: "Table 11", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE TWELVE (8 guests)
+  // TABLE 12 (8 guests)
   // ============================================
-  { id: 91, name: "GLORIA DULATRE", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 92, name: "SAMMY DULATRE", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 93, name: "RENREN DULATRE", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 94, name: "BOY ESCONDE", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 95, name: "EVANGELINE MANACSA", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 96, name: "DANILO ESCONDE", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 97, name: "JUMBO MANGUNAY", table: "Table TWELVE", category: "Regular", notes: "" },
-  { id: 98, name: "AHRON DULATRE", table: "Table TWELVE", category: "Regular", notes: "" },
+  { id: 69, name: "Jaime Santiago", table: "Table 12", category: "Regular", notes: "" },
+  { id: 70, name: "Bobot Mesa", table: "Table 12", category: "Regular", notes: "" },
+  { id: 71, name: "Lito Gonzales", table: "Table 12", category: "Regular", notes: "" },
+  { id: 72, name: "Mr. Teody Tumamao", table: "Table 12", category: "Regular", notes: "" },
+  { id: 73, name: "Rommel Abadilla", table: "Table 12", category: "Regular", notes: "" },
+  { id: 74, name: "Wilfred Sagun", table: "Table 12", category: "Regular", notes: "" },
+  { id: 75, name: "Lino Sagun", table: "Table 12", category: "Regular", notes: "" },
+  { id: 76, name: "Moises Bartolome", table: "Table 12", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE THIRTEEN (8 guests)
+  // TABLE 13 (8 guests)
   // ============================================
-  { id: 99, name: "UNYOK MANGUNAY", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 100, name: "LILETTE MANGUNAY", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 101, name: "MYLA MANGUNAY", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 102, name: "WHENDELL MANGUNAY", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 103, name: "DARWIN MANGUNAY", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 104, name: "LITO CASTILLO", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 105, name: "GIGI CASTILLO", table: "Table THIRTEEN", category: "Regular", notes: "" },
-  { id: 106, name: "KAP RELEO CASTILLO", table: "Table THIRTEEN", category: "Regular", notes: "" },
+  { id: 77, name: "Connie Legaspi", table: "Table 13", category: "Regular", notes: "" },
+  { id: 78, name: "Camille Legaspi", table: "Table 13", category: "Regular", notes: "" },
+  { id: 79, name: "JP Acosta", table: "Table 13", category: "Regular", notes: "" },
+  { id: 80, name: "Harley Kit Villanueva", table: "Table 13", category: "Regular", notes: "" },
+  { id: 81, name: "Criz Novelyn Dungca", table: "Table 13", category: "Regular", notes: "" },
+  { id: 82, name: "Pinky Guiao", table: "Table 13", category: "Regular", notes: "" },
+  { id: 83, name: "Queenie Manor", table: "Table 13", category: "Regular", notes: "" },
+  { id: 84, name: "Badeth Garcia", table: "Table 13", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE FOURTEEN (8 guests)
+  // TABLE 14 (5 guests)
   // ============================================
-  { id: 107, name: "ELOIZA BARGAMENTO", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 108, name: "JELIREY JOHN RAMOS", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 109, name: "ELY BARGAMENTO", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 110, name: "THEA", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 111, name: "ELIJAH BARGAMENTO", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 112, name: "ELIZON ESCONDE", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 113, name: "SUSAN RAMIL", table: "Table FOURTEEN", category: "Regular", notes: "" },
-  { id: 114, name: "DANIEL ESCONDE", table: "Table FOURTEEN", category: "Regular", notes: "" },
+  { id: 85, name: "Mr. & Mrs. Gerald Cadelina", table: "Table 14", category: "Regular", notes: "" },
+  { id: 86, name: "Mr. & Mrs. Florante Usbal", table: "Table 14", category: "Regular", notes: "" },
+  { id: 87, name: "Ms. Sheila Bumagat", table: "Table 14", category: "Regular", notes: "" },
+  { id: 88, name: "Daniel Gawat", table: "Table 14", category: "Regular", notes: "" },
+  { id: 89, name: "Fredo Sagun", table: "Table 14", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE FIFTEEN (8 guests)
+  // TABLE 15 (6 guests)
   // ============================================
-  { id: 115, name: "ELIZA BARGAMENTO", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 116, name: "ELCID BARGAMENTO", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 117, name: "DIANE ESCONDE", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 118, name: "CHARMAY ANGELA", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 119, name: "ARNALYN ALNAS", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 120, name: "EDDIE ALNAS", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 121, name: "YVAN CARLOS", table: "Table FIFTEEN", category: "Regular", notes: "" },
-  { id: 122, name: "AUBREY JACOBE", table: "Table FIFTEEN", category: "Regular", notes: "" },
+  { id: 90, name: "Shirley Pascua & Husband", table: "Table 15", category: "Regular", notes: "" },
+  { id: 91, name: "Norma Valencia & Husband", table: "Table 15", category: "Regular", notes: "" },
+  { id: 92, name: "Marlon Mamaril", table: "Table 15", category: "Regular", notes: "" },
+  { id: 93, name: "Eddie Dizon", table: "Table 15", category: "Regular", notes: "" },
+  { id: 94, name: "Rebecca Santos", table: "Table 15", category: "Regular", notes: "" },
+  { id: 95, name: "Dominga Dacanay", table: "Table 15", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE SIXTEEN (8 guests)
+  // TABLE 16 (7 guests)
   // ============================================
-  { id: 123, name: "ANDREA RIZZA SALVADOR", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 124, name: "DENELLE GEORGETTE", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 125, name: "JEVON TOLEDO", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 126, name: "JYNDELL", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 127, name: "JUSTIN SALVADOR", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 128, name: "YANAH RAMOS", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 129, name: "EMAN SALVADOR", table: "Table SIXTEEN", category: "Regular", notes: "" },
-  { id: 130, name: "SAYURI SALVADOR", table: "Table SIXTEEN", category: "Regular", notes: "" },
+  { id: 96, name: "Maam Rosie Gamboa", table: "Table 16", category: "Regular", notes: "" },
+  { id: 97, name: "Myrna Camante", table: "Table 16", category: "Regular", notes: "" },
+  { id: 98, name: "Sheila Marie Alipio", table: "Table 16", category: "Regular", notes: "" },
+  { id: 99, name: "Checyl Anoling", table: "Table 16", category: "Regular", notes: "" },
+  { id: 100, name: "Russel Domingo", table: "Table 16", category: "Regular", notes: "" },
+  { id: 101, name: "Alma Quiambao", table: "Table 16", category: "Regular", notes: "" },
+  { id: 102, name: "Shyne De Guzman", table: "Table 16", category: "Regular", notes: "" },
 
   // ============================================
-  // TABLE SEVENTEEN (8 guests)
+  // PRINCIPAL S 1 (5 guests)
   // ============================================
-  { id: 131, name: "JOCELYN RAMOS", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 132, name: "TESS RAMOS", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 133, name: "1 FRIEND LOLA TESS RAMOS", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 134, name: "1 FRIEND LOLA TESS RAMOS", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 135, name: "EDEN RAMOS", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 136, name: "EDNA MONTOYA", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 137, name: "MANDY MONTOYA", table: "Table SEVENTEEN", category: "Regular", notes: "" },
-  { id: 138, name: "ANTON SALVADOR", table: "Table SEVENTEEN", category: "Regular", notes: "" },
+  { id: 103, name: "Mr. Rene Azarcon", table: "Principal S 1", category: "Principal", notes: "" },
+  { id: 104, name: "Mr. Rene Galapon", table: "Principal S 1", category: "Principal", notes: "" },
+  { id: 105, name: "Mrs. Charlie Dumlao", table: "Principal S 1", category: "Principal", notes: "" },
+  { id: 106, name: "Mrs. Glo Cabacungan", table: "Principal S 1", category: "Principal", notes: "" },
+  { id: 107, name: "Mrs. Marilou Dacayanan", table: "Principal S 1", category: "Principal", notes: "" },
 
   // ============================================
-  // TABLE EIGHTEEN (9 guests)
+  // PRINCIPAL S 2 (5 guests)
   // ============================================
-  { id: 139, name: "RICHIE TOLEDO", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 140, name: "ECOND LAYNO", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 141, name: "LULU DELMENDO", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 142, name: "CHATO", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 143, name: "KENNETH RAMOS", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 144, name: "BRYAN RAMOS", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 145, name: "SONNY RAMOS", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 146, name: "JOHN CARLO RAMOS", table: "Table EIGHTEEN", category: "Regular", notes: "" },
-  { id: 147, name: "JOHN FRANCIS TACUSALME", table: "Table EIGHTEEN", category: "Regular", notes: "" },
+  { id: 108, name: "Mrs. Marites Taguba", table: "Principal S 2", category: "Principal", notes: "" },
+  { id: 109, name: "Mrs. Virginia Bugaoan", table: "Principal S 2", category: "Principal", notes: "" },
+  { id: 110, name: "Mrs. Vivian Almendra", table: "Principal S 2", category: "Principal", notes: "" },
+  { id: 111, name: "Mrs. Cecilla Fe Guiao", table: "Principal S 2", category: "Principal", notes: "" },
+  { id: 112, name: "Mrs. Norval Valdez", table: "Principal S 2", category: "Principal", notes: "" },
 
   // ============================================
-  // TABLE NINETEEN (7 guests)
+  // SS 1 (6 guests)
   // ============================================
-  { id: 148, name: "GM ARTEMIO QUINTERO", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 149, name: "LARRY LAGAMIA", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 150, name: "NESTOR DE VILLA", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 151, name: "JOSIE DE VILLA", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 152, name: "MANOLITO SUPNET", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 153, name: "MICHELLE SUPNET", table: "Table NINETEEN", category: "Regular", notes: "" },
-  { id: 154, name: "EIRENE SUPNET", table: "Table NINETEEN", category: "Regular", notes: "" },
+  { id: 113, name: "Reymark Labrador", table: "SS 1", category: "Secondary", notes: "" },
+  { id: 114, name: "Angelica Lampitoc", table: "SS 1", category: "Secondary", notes: "" },
+  { id: 115, name: "Hadji Mendoza", table: "SS 1", category: "Secondary", notes: "" },
+  { id: 116, name: "Abou Omar", table: "SS 1", category: "Secondary", notes: "" },
+  { id: 117, name: "Shir Visaya Jr", table: "SS 1", category: "Secondary", notes: "" },
+  { id: 118, name: "Imer Dequina", table: "SS 1", category: "Secondary", notes: "" },
 
   // ============================================
-  // TABLE TWENTY (8 guests)
+  // SS 2 (6 guests)
   // ============================================
-  { id: 155, name: "LORENCIO GONIO", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 156, name: "ACE", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 157, name: "NICA DELA CRUZ", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 158, name: "MICHELLE MAXIMO", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 159, name: "ELVIE TOMAS", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 160, name: "SEHEMYA DE LEON", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 161, name: "JOYCE JALANDONI", table: "Table TWENTY", category: "Regular", notes: "" },
-  { id: 162, name: "TERESA BAUTISTA", table: "Table TWENTY", category: "Regular", notes: "" },
+  { id: 119, name: "Rocel Visaya", table: "SS 2", category: "Secondary", notes: "" },
+  { id: 120, name: "Kyla Espinosa", table: "SS 2", category: "Secondary", notes: "" },
+  { id: 121, name: "Jan Michael Visaya", table: "SS 2", category: "Secondary", notes: "" },
+  { id: 122, name: "Filipina Loyao", table: "SS 2", category: "Secondary", notes: "" },
+  { id: 123, name: "Alessiya Visaya", table: "SS 2", category: "Secondary", notes: "" },
+  { id: 124, name: "Anna Nicole Pascual", table: "SS 2", category: "Secondary", notes: "" },
 
   // ============================================
-  // TABLE TWENTY-ONE (7 guests)
+  // PS LONG TABLE 1 (20 guests)
   // ============================================
-  { id: 163, name: "DAREL BIYO", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 164, name: "GERALDINE BIYO", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 165, name: "EDS SIYANG", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 166, name: "CLAUDINE NOORA", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 167, name: "JM BUEN", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 168, name: "JONATHAN PAREL", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
-  { id: 169, name: "CIRIACO VASQUEZ", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
+  { id: 125, name: "Brgy. Capt. Ysmael Sable", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 126, name: "Mrs. Anna Lorraine Sable", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 127, name: "Dr. Jerry Sagabaen Jr.", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 128, name: "Atty. Mary Ann Sagabaen", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 129, name: "Engr. Alipio Nicolas Corpuz", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 130, name: "Engr. Ricky Remigio", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 131, name: "Hon. Arnelyn Daynos", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 132, name: "Hon. Rogelio Dungca", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 133, name: "Mr. Edong Acosta", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 134, name: "Mr. Gilbert Libao", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 135, name: "Mrs. Criselda Dungca", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 136, name: "Mrs. Esther Acosta", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 137, name: "Mrs. Maricris Libao", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 138, name: "Carl Ramos", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 139, name: "Miguel Garcia", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 140, name: "Mr. Agosto Gamboa", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 141, name: "Mr. Nolan Acosta", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 142, name: "Mrs. Winnie Acosta", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 143, name: "Mr. Camilo Oppuer", table: "PS Long Table 1", category: "Long Table", notes: "" },
+  { id: 144, name: "Mrs. Liberty Oppuer", table: "PS Long Table 1", category: "Long Table", notes: "" },
 
   // ============================================
-  // VIP TABLE 1 (7 guests)
+  // PS LONG TABLE 2 (20 guests)
   // ============================================
-  { id: 170, name: "MR. ANDY TAGANIN", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 171, name: "MR. MARLOU ROXAS", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 172, name: "MR. EDUARDO PATAUEG", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 173, name: "MR. DANILO MAILEM", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 174, name: "MRS. VICKY UY", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 175, name: "MRS. TOMASA CARAG", table: "VIP Table 1", category: "VIP", notes: "" },
-  { id: 222, name: "TERESITA BAUTISTA", table: "VIP Table 1", category: "VIP", notes: "" },
+  { id: 145, name: "Dra. Crispina Agcaoili", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 146, name: "SB. Roberto Agcaoili", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 147, name: "Mrs. Aika Cadelina", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 148, name: "SB. Sherwyn Cadelina", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 149, name: "SB. Aristotle Visaya", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 150, name: "Mrs. Gina Visaya", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 151, name: "Mrs. Judy Mateo", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 152, name: "Mr. June Franco Mateo", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 153, name: "Mrs. Helen Grace Restituto", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 154, name: "Mr. Restituto F. De Galicia", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 155, name: "Mrs. Yolly Olatan", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 156, name: "Mr. Roberto Olatan", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 157, name: "Mr. Sol Ramon Cireneo", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 158, name: "Mrs. Winnie Cireneo", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 159, name: "Mr. Carlos Nicolas Corpuz", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 160, name: "Mr. Francis Navaro", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 161, name: "Mr. Henry Dizon", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 162, name: "Mr. Manny Guillermo", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 163, name: "Mr. Noel Pascua", table: "PS Long Table 2", category: "Long Table", notes: "" },
+  { id: 164, name: "Mr. Rafael Sable", table: "PS Long Table 2", category: "Long Table", notes: "" },
 
   // ============================================
-  // VIP TABLE 2 (6 guests)
+  // PARENTS TABLE (2 guests)
   // ============================================
-  { id: 176, name: "MRS. ANN MARGARETTE GUINTO", table: "VIP Table 2", category: "VIP", notes: "" },
-  { id: 177, name: "MRS. MARITES HERRERA", table: "VIP Table 2", category: "VIP", notes: "" },
-  { id: 178, name: "MRS. AILEEN CASTILLO", table: "VIP Table 2", category: "VIP", notes: "" },
-  { id: 179, name: "MS. JUVY MANGUNAY", table: "VIP Table 2", category: "VIP", notes: "" },
-  { id: 180, name: "MS. WAYNE LOU MANGUNAY", table: "VIP Table 2", category: "VIP", notes: "" },
-  { id: 181, name: "MRS. KELLY BIANCA MANGUNAY", table: "VIP Table 2", category: "VIP", notes: "" },
-
-  // ============================================
-  // VIP TABLE 3 (20 guests)
-  // ============================================
-  { id: 182, name: "BOARD MEMBER ED CHRISTIAN S. GO", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 183, name: "BOARD MEMBER JULIE L. REYES", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 184, name: "MAYOR MALOU SAGUBAN", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 185, name: "MUNICIPAL ADMIN FRANCIS L. SAGUBAN", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 186, name: "SB ARNOL BARANGAN", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 187, name: "SB EDWIN ESTEBAN", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 188, name: "SB BOBOT BAUA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 189, name: "SB HEIRBERT GALABAY", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 190, name: "FORMER VICE MAYOR BONG RESPICIO", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 191, name: "ATTY. EDNALIN D. LAYUGAN", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 192, name: "MR. REIGH LUIS PASARABA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 193, name: "DR. DONALD CADELINA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 194, name: "MR. TIMOTEO GALANZA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 195, name: "MRS. EVELYN GALANZA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 196, name: "MR. ALBINO GALANZA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 197, name: "MRS. DAISY GALANZA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 198, name: "MR. RICARDO ISIDRO", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 199, name: "MR. ZALDY FORONDA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 200, name: "MR. PEDRITO GALANZA", table: "VIP Table 3", category: "VIP", notes: "" },
-  { id: 201, name: "MR. RUBEN CAUILAN", table: "VIP Table 3", category: "VIP", notes: "" },
-
-  // ============================================
-  // VIP TABLE 4 (20 guests)
-  // ============================================
-  { id: 202, name: "SP PORONG MALLILLIN", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 203, name: "MR. LEONCIO DALIN", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 204, name: "MRS. LEONCIO DALIN", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 205, name: "MR. ROBERT JONATHAN TOLEDO", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 206, name: "MR. EDDIE PUA", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 207, name: "MRS. ELIZABETH PUA", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 208, name: "MR. JOEFREY PALMA", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 209, name: "MRS. CHARLSHAYNE PUA", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 210, name: "MR. ARVIN NEIL QUINTERO", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 211, name: "MS. DAHLIA RAMOS", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 212, name: "MR. NESTOR DE VILLA JR.", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 213, name: "MR. JOSE PALMA JR.", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 214, name: "MR. ABELARDO PAGSIBIGAN III", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 215, name: "MRS. AILEEN FAGEL", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 216, name: "MR. GILBERT FAGEL", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 217, name: "MRS. JOY AVES BUENAVENTURA", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 218, name: "MRS. GEMMA GONZALES", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 219, name: "MRS. JO-ANN PINTUCAN", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 220, name: "MR. RICHARD GUINTO", table: "VIP Table 4", category: "VIP", notes: "" },
-  { id: 221, name: "MR. THAD CARREON", table: "VIP Table 4", category: "VIP", notes: "" },
-
+  { id: 165, name: "Parents (Bride) Shri Sr. & Rosalina", table: "Parents Table", category: "Parents", notes: "" },
+  { id: 166, name: "Parents (Groom) Felipe & Nena", table: "Parents Table", category: "Parents", notes: "" },
 ]
 
 export const getTables = () => {
   const tableMap = new Map()
   const tableOrder = [
-    "VIP Table 1",
-    "VIP Table 2",
-    "VIP Table 3",
-    "VIP Table 4",
-    "Table ONE",
-    "Table TWO",
-    "Table THREE",
-    "Table FOUR",
-    "Table FIVE",
-    "Table SIX",
-    "Table SEVEN",
-    "Table EIGHT",
-    "Table NINE",
-    "Table TEN",
-    "Table ELEVEN",
-    "Table TWELVE",
-    "Table THIRTEEN",
-    "Table FOURTEEN",
-    "Table FIFTEEN",
-    "Table SIXTEEN",
-    "Table SEVENTEEN",
-    "Table EIGHTEEN",
-    "Table NINETEEN",
-    "Table TWENTY",
-    "Table TWENTY-ONE",
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5",
+    "Table 6",
+    "Table 7",
+    "Table 8",
+    "Table 9",
+    "Table 10",
+    "Table 11",
+    "Table 12",
+    "Table 13",
+    "Table 14",
+    "Table 15",
+    "Table 16",
+    "Principal S 1",
+    "Principal S 2",
+    "SS 1",
+    "SS 2",
+    "PS Long Table 1",
+    "PS Long Table 2",
+    "Parents Table",
   ]
 
   guests.forEach(guest => {

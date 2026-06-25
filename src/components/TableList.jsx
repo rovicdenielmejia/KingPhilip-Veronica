@@ -6,7 +6,7 @@ const TableList = () => {
 
   return (
     <section className="space-y-4">
-      <h2 className="font-serif text-2xl font-medium text-primary">
+      <h2 className="font-serif text-2xl font-medium" style={{ color: '#FFFFFF' }}>
         Guest Seating List
       </h2>
       <div className="grid gap-4">

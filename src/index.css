@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,12 +16,11 @@ html {
 
 body {
   font-family: 'Lora', Georgia, serif;
-  background-color: #F8F8F4;
-  background-image: url('/premium-bg.png');
+  background: linear-gradient(rgba(10,10,10,0.9), rgba(10,10,10,0.9)), url('/Bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #4D5F47;
+  color: #FFFFFF;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,9 +30,10 @@ body {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 248, 244, 0.84) 0%, rgba(238, 243, 234, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.5) 50%, rgba(10,10,10,0.7) 100%);
 }
 
+/* Outline Floral Corner Elements */
 .invite-floral-canvas::before,
 .invite-floral-canvas::after {
   content: '';
@@ -45,21 +45,120 @@ body {
 .invite-floral-canvas::before {
   top: 0;
   right: 0;
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 260px;
   background:
-    radial-gradient(circle at 82% 18%, rgba(231, 204, 196, 0.36), transparent 55%),
-    radial-gradient(circle at 58% 42%, rgba(182, 203, 169, 0.28), transparent 60%);
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0 0 0 100%;
+  border-top: none;
+  border-right: none;
 }
 
 .invite-floral-canvas::after {
   bottom: 0;
   left: 0;
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   background:
-    radial-gradient(circle at 20% 80%, rgba(231, 204, 196, 0.28), transparent 58%),
-    radial-gradient(circle at 40% 62%, rgba(182, 203, 169, 0.26), transparent 62%);
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 30% 70%, rgba(255,255,255,0.04) 0%, transparent 40%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0 100% 0 0;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* Decorative outline flower using borders */
+.floral-outline {
+  position: relative;
+}
+
+.floral-outline::before {
+  content: '✦';
+  position: absolute;
+  font-size: 14px;
+  color: rgba(255,255,255,0.2);
+  top: -8px;
+  left: -8px;
+}
+
+.floral-outline::after {
+  content: '✦';
+  position: absolute;
+  font-size: 14px;
+  color: rgba(255,255,255,0.2);
+  bottom: -8px;
+  right: -8px;
+}
+
+/* Decorative divider line */
+.floral-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.floral-divider::before,
+.floral-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+}
+
+.floral-divider .diamond {
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(255,255,255,0.3);
+  transform: rotate(45deg);
+}
+
+/* Outline flower SVG style */
+.floral-corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.floral-corner::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.floral-corner::after {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 50%;
+}
+
+.floral-corner-tl {
+  top: -30px;
+  left: -30px;
+}
+
+.floral-corner-br {
+  bottom: -30px;
+  right: -30px;
+}
+
+/* Petal decorative elements */
+.petal {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50% 0 50% 0;
+  pointer-events: none;
 }
 
 .font-serif {
@@ -74,21 +173,25 @@ body {
   font-family: 'Allura', cursive;
 }
 
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #E6EADF;
+  background: #1A1A1A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #BFD0B3;
+  background: #404040;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9FB58F;
+  background: #585858;
 }
 
 .card-hover {
@@ -97,7 +200,7 @@ body {
 
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(77, 95, 71, 0.16);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
 }
 
 input:focus {
@@ -106,8 +209,8 @@ input:focus {
 
 .floral-strip {
   background: linear-gradient(180deg, 
-    rgba(191, 208, 179, 0.66) 0%, 
-    rgba(240, 223, 218, 0.48) 45%,
+    rgba(255, 255, 255, 0.08) 0%, 
+    rgba(255, 255, 255, 0.03) 45%,
     transparent 100%
   );
 }
@@ -119,4 +222,27 @@ input:focus {
 
 .animate-subtle-float {
   animation: subtle-float 4s ease-in-out infinite;
+}
+
+/* Outline floral border for cards */
+.outline-floral-border {
+  border: 1px solid rgba(255,255,255,0.12);
+  position: relative;
+}
+
+.outline-floral-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Input styles for dark theme */
+input::placeholder {
+  color: rgba(255,255,255,0.35);
 }
