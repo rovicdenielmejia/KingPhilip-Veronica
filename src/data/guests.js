@@ -184,17 +184,20 @@ export const guests = [
   { id: 112, name: "Mrs. Norval Valdez", table: "Principal Sponsor 2", category: "Principal", notes: "" },
 
   // ============================================
-  // SS 1 (6 guests)
+  // SS 1 (9 guests)
   // ============================================
   { id: 113, name: "Reymark Labrador", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
   { id: 114, name: "Angelica Lampitoc", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
   { id: 115, name: "Hadji Mendoza", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
-  { id: 116, name: "Abou Omar", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
-  { id: 117, name: "Shir Visaya Jr", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
-  { id: 118, name: "Imer Dequina", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 116, name: "Janjan Garcia", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 117, name: "Shri Visaya Jr", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 118, name: "Junel Mendones", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 167, name: "Ashley Morgardo", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 168, name: "Elias Boa", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
+  { id: 169, name: "Amari", table: "Secondary Sponsor 1", category: "Secondary", notes: "" },
 
   // ============================================
-  // SS 2 (6 guests)
+  // SS 2 (9 guests)
   // ============================================
   { id: 119, name: "Rocel Visaya", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
   { id: 120, name: "Kyla Espinosa", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
@@ -202,6 +205,9 @@ export const guests = [
   { id: 122, name: "Filipina Loyao", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
   { id: 123, name: "Alessiya Visaya", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
   { id: 124, name: "Anna Nicole Pascual", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
+  { id: 170, name: "Ethan/Nonoy", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
+  { id: 171, name: "Miles Boa", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
+  { id: 172, name: "Veralyn Boa", table: "Secondary Sponsor 2", category: "Secondary", notes: "" },
 
   // ============================================
   // PS LONG TABLE 1 (20 guests)
